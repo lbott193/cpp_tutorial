@@ -1,15 +1,31 @@
 #include <iostream>
 #include "replace_player.h"
+#include "glibber.h"
 
 int main(int argc, char **argv) {
+
     std::string start_string("Drei Chinesen mit dem Kontrabass");
 
-    ReplacePlayer player1('i','u');
-    ReplacePlayer player2('a','b');
-    std::string answer = player1.Play(start_string);
-    answer = player2.Play(answer);
+	std::string mittelteil("--- wird auf magische Weise zu ---");
 
-    std::cout << answer << std::endl;
+	
+
+
+   // ReplacePlayer player1('i','u');
+   // ReplacePlayer player2('a','b');
+
+	glibber machschon;
+
+
+    std::string answer = machschon.Play(start_string);
+    //answer = player2.Play(answer);
+
+
+	std::cout << start_string << std::endl;
+
+	std::cout << mittelteil << std::endl;
+
+	std::cout << answer << std::endl;
 
     return 0;
 }

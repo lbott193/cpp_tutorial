@@ -14,5 +14,7 @@ add_executable(tutorial
         replace_player.h        
         glibber.cpp
         glibber.h
+		replace_player_lukas.cpp
+        replace_player_lukas.h
         )
 
